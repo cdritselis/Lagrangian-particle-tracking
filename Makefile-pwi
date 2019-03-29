@@ -1,0 +1,5 @@
+
+sph_pwi: sph_pwi.o
+	gfortran -o sph_pwi sph_pwi.o
+sph_pwi.o: sph_pwi.F90
+	gfortran -c -std=f2008 -Wall -g sph_pwi.F90
